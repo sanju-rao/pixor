@@ -14,4 +14,18 @@ function tabFn(evt, cityName) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+
+$(document).ready(function() {
+  var header = $('.navbar_head');
+  
+  $(window).scroll(function(e){
+    if(header.offset().top !== 0){
+      if(!header.hasClass('shadow')){
+        header.addClass('shadow');
+      }
+    }else{
+      header.removeClass('shadow');
+    }
+  });
+  document.getElementById("defaultOpen").click();
+});
