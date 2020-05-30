@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Pixor</title>
     <script src="/js/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-    <script src="/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
     <script src="js/script.js"></script>
 </head>
 
@@ -223,12 +224,12 @@
                     <h3>Bunch of Great Layouts and <span> Web Templates</span></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magn</p>
-                    <form action="https://formspree.io/xnqgplpo" method="POST" class="contact-form">
+                    <form id="contact-form" action="https://formspree.io/xnqgplpo" method="POST" class="contact-form">
                         <span> <input type="text" name="name" placeholder="Your Name"> </span>
                         <span><input type="email" name="email" placeholder="Your email"> </span>
                         <span><textarea type="text" name="message" placeholder="Message"></textarea></span>
-                        <input type="hidden" name="_next" value="https://pixor.in"/>
-                        <button type="submit"> Submit</button>
+                        <button id="contact-form-button"> Submit</button>
+                        <p id="contact-form-status"></p>
                     </form>
                 </div>
                 <div class="contact_img">
@@ -274,26 +275,28 @@
                     <img src="assets/images/logo.png">
                 </div>
             </div>
-           <div class="copy">
-            <p>Copyright © 2020 pixor.in. All rights reserved.</p>
-           </div>
+            <div class="copy">
+                <p>Copyright © 2020 pixor.in. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5ed2bb178ee2956d73a61ade/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
+    var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5ed2bb178ee2956d73a61ade/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
     })();
-    </script>
-    <!--End of Tawk.to Script-->
+</script>
+<!--End of Tawk.to Script-->
 
 
 </html>
