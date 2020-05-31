@@ -251,7 +251,7 @@ section.offer_section {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding-top: 80px;
+    padding: 80px 0px;
 }
 
 .zone_overall {
@@ -312,6 +312,7 @@ section.bunch_section {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding: 80px 0px;
 }
 
 .bunch_overall {
