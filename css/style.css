@@ -84,6 +84,7 @@ nav.navbar_head {
     flex-wrap: wrap;
     width: 98px;
     justify-content: center;
+    display: block;
 }
 .nav_links ul li a{
     font-family: 'Poppins-Regular';
@@ -182,7 +183,7 @@ section.service_section {
     width: 201px;
     height: 50px;
     border-radius: 40px;
-    border: solid 1px #c0b0ff;
+    border: solid 1px #7151EF;
     font-family: 'Poppins-Regular';
     font-size: 16px;
     text-transform: capitalize;
@@ -850,4 +851,10 @@ a.btn {
 
 a.btn:hover {
     color: white;
+}
+
+a.btn.btn-white {
+    background-color: white;
+    color: #7151ef;
+    border: solid 1px #7151EF;
 }
