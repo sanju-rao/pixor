@@ -60,7 +60,7 @@ nav.navbar_head {
 }
 .logo img {
     width: 200px;
-    max-height: 100px;
+    max-height: 85px;
     object-fit: contain;
 }
 .nav_links {
