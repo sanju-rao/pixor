@@ -137,10 +137,10 @@ section.banner_overall {
     line-height: 28px;
 }
 .creative_sec p {
-    color: #272727;
     font-family: 'Poppins-Regular';
     font-size: 14px;
     line-height: 28px;
+    color: rgba(51, 51, 51, 0.5);
 }
 
 .creative_sec button {
