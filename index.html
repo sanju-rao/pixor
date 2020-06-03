@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <title>Pixor</title>
-    <script src="/js/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <script src="/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
-    <script src="/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    <script src="/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     <script src="js/script.js"></script>
-    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon"/>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -22,7 +19,8 @@
         <div class="logo">
             <img src="assets/images/logo.png" alt="logo">
         </div>
-        <div class="nav_links">
+        <span class="menu_icon" onclick="menuIcon()"><img src="assets/images/menu.png"></span>
+        <div class="nav_links" id="nav_bar">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="#contact-us">Contact</a></li>
@@ -57,9 +55,8 @@
                 </div>
 
                 <div id="professional" class="servicecontent">
-                    <p class="pro_para">Best for active freelancers and designers who need more
-                        projects and premium features. Export your code and unlock more pages for your unhosted
-                        projects.</p>
+                    <p class="pro_para">Best for active freelancers and designers who need more projects and premium features. Export your code and unlock more pages for your unhosted projects.
+                    </p>
                     <div class="service_content">
                         <div class="service_inner_conetnt">
                             <img src="/assets/images/web-ui-icon.png">
@@ -93,9 +90,8 @@
                 </div>
 
                 <div id="personal" class="servicecontent">
-                    <p class="pro_para">Best for active freelancers and designers who need more
-                        projects and premium features. Export your code and unlock more pages for your unhosted
-                        projects.</p>
+                    <p class="pro_para">Best for active freelancers and designers who need more projects and premium features. Export your code and unlock more pages for your unhosted projects.
+                    </p>
                     <div class="service_content">
                         <div class="service_inner_conetnt">
                             <img src="/assets/images/brochure-flyers-icon.png">
@@ -157,17 +153,19 @@
                         <button>Get Started now</button>
                     </div>
                 </div>
+                <div class="mobile_bunch">
+                    <img src="assets/images/bunch.png">
+                </div>
             </div>
         </div>
     </section>
-    <section class="our_work">
+    <section class="our_work" id="our_work">
         <h3>Our Works</h3>
         <div class="our_works">
             <div class="work_content">
                 <div class="work_content_inner">
                     <img src="assets/images/work_logo.png">
-                    <p>Pixel Painters is a Chennai-based Painting company
-                        specializing in Big Buildings. We provided design for all of their components.</p>
+                    <p>Pixel Painters is a Chennai-based Painting company specializing in Big Buildings. We provided design for all of their components.</p>
                 </div>
             </div>
             <div class="work_img">
@@ -199,7 +197,7 @@
         </div>
 
     </section>
-    <section class="testimonial">
+    <section class="testimonial" id="testimonials">
         <h3>Client's Testimonial</h3>
         <div class="testimonial_overall">
             <div class="testi_content">
@@ -213,8 +211,7 @@
         <div class="container">
             <div class="contact_overall">
                 <div class="contact_content">
-                    <h3>Have A <span> One On One Interaction</span>
-                        With Our Experts Now!
+                    <h3>Have A <span> One On One Interaction</span> With Our Experts Now!
                     </h3>
                     <form id="contact-form" action="https://formspree.io/xnqgplpo" method="POST" class="contact-form">
                         <span> <input type="text" name="name" placeholder="Your Name"> </span>
@@ -231,15 +228,30 @@
 
         </div>
     </section>
-    <footer class="foot">
+    <footer class="foot_section">
         <div class="container">
-            <div class="foot_overall">
-                <div class="foot_content">
-
-                    <div class="contect_inner">
-                        <h6>Contacts</h6>
-                        <div class="contact_imgs"><img src="assets/images/headset.png"></div>
-                        <div class="contact_number">
+            <div class="foot_overal">
+                <div class="foot_contents">
+                    <img src="/assets/images/foot_logo.png">
+                    <p>A successful, award winning design team that will help you with all your creative tasks. From websites,apps to branding,we got you covered!</p>
+                </div>
+                <div class="foot_links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="#our-service">Our services</a></li>
+                        <li><a href="#testimonials">Testimonial</a></li>
+                        <li><a href="#our_work">Our Works</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="contect_inners">
+                    <h6>Contacts</h6>
+                    <div class="content_detail">
+                        <div class="contact_imgs">
+                            <img src="assets/images/headset.png">
+                        </div>
+                        <div class="contact_numbers">
                             <ul>
                                 <p>Have questions?</p>
                                 <li><a>+91 9841 600 980</a></li>
@@ -248,27 +260,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="foot_links">
-                    <h4>Links</h4>
-                    <ul>
-                        <li><a>About company</a></li>
-                        <li><a>Our services</a></li>
-                        <li><a>Team members</a></li>
-                        <li><a>Works</a></li>
-                    </ul>
+                <div class="copyright">
+                    <p>Copyright © 2020 pixor.in. All rights reserved.</p>
                 </div>
-                <div class="foot_testi">
-                    <ul>
-                        <li><a>About company</a></li>
-                        <li><a>Works</a></li>
-                    </ul>
-                </div>
-                <div class="foot_logo">
-                    <img src="assets/images/logo.png">
-                </div>
-            </div>
-            <div class="copy">
-                <p>Copyright © 2020 pixor.in. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -278,7 +272,7 @@
 <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
         Tawk_LoadStart = new Date();
-    (function () {
+    (function() {
         var s1 = document.createElement("script"),
             s0 = document.getElementsByTagName("script")[0];
         s1.async = true;
